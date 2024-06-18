@@ -20,7 +20,8 @@ LSTM is chosen due to its ability to capture long-term dependencies and patterns
 
 Stock markets evolve over time. Technological advancements, regulatory changes, and shifts in economic conditions can significantly alter market behavior. Data from the last 5 years is more likely to reflect the current market conditions compared to data from 10 years ago.
 
-#### **Corporate Changes:** Companies undergo substantial changes over a decade, including shifts in business models, management changes, mergers and acquisitions, which might render older data less relevant.
+#### **Corporate Changes:** 
+Companies undergo substantial changes over a decade, including shifts in business models, management changes, mergers and acquisitions, which might render older data less relevant.
 
 ### 3. Model Complexity and Training Efficiency
 
@@ -41,7 +42,8 @@ Technological Changes: Financial markets have seen significant technological cha
 
 ### 5. Economic Cycles and Trends
 
-#### **Business Cycles:** Financial markets are influenced by economic cycles (boom and bust periods). 
+#### **Business Cycles:** 
+Financial markets are influenced by economic cycles (boom and bust periods). 
 A 5-year span might capture one complete cycle, while a 10-year span could include multiple cycles, making it harder for the model to learn consistent patterns.
 
 
@@ -60,6 +62,7 @@ The choice between using 5 years or 10 years of historical data involves a trade
 ## **Our strategy**
 
 - **Start with 5 years of data:** Train the model and evaluate its performance.
+  
 - **Incremental Testing:** Gradually include more historical data (e.g., moving to 6, 7, 8 years) and compare the performance. This can help in understanding if additional data improves model accuracy or introduces noise.
 Validation: Use cross-validation techniques to assess the model's performance over different periods. This helps in ensuring that the model generalizes well to different market conditions.
 By carefully considering these factors and adopting a flexible, experimental approach, you can determine the optimal historical data span for your specific stock price prediction model.
