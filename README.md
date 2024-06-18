@@ -37,35 +37,35 @@ Training on 10 years of data can be significantly more time-consuming and resour
 More recent data tends to be of higher quality with fewer missing values and more accurate records. Historical data beyond a certain point might be less reliable due to changes in reporting standards or data collection methods.
 Technological Changes: Financial markets have seen significant technological changes in the past decade, including algorithmic trading and the rise of high-frequency trading. Models trained on more recent data are more likely to capture these modern dynamics.
 
-5. Economic Cycles and Trends
-Business Cycles: Financial markets are influenced by economic cycles (boom and bust periods). A 5-year span might capture one complete cycle, while a 10-year span could include multiple cycles, making it harder for the model to learn consistent patterns.
-Market Sentiment: Investor sentiment and market trends can change over shorter periods. A 5-year window might be more effective in capturing these short-to-medium term trends.
-Balancing Act
+### 5. Economic Cycles and Trends
+
+#### **Business Cycles:** Financial markets are influenced by economic cycles (boom and bust periods). 
+A 5-year span might capture one complete cycle, while a 10-year span could include multiple cycles, making it harder for the model to learn consistent patterns.
+
+
+#### **Market Sentiment:**
+Investor sentiment and market trends can change over shorter periods. A 5-year window might be more effective in capturing these short-to-medium term trends.
+
+
+#### **Balancing Act:**
+
 The choice between using 5 years or 10 years of historical data involves a trade-off:
 
-5 Years: More reflective of current market conditions, lower risk of including outdated patterns, and reduced computational complexity.
-10 Years: Broader dataset providing more information, which could be beneficial for capturing long-term trends and reducing the risk of missing significant patterns.
-Recommendations
-When to Use 5 Years:
-The market or company has undergone significant changes in recent years.
-The goal is to capture more recent trends and investor behavior.
-Limited computational resources are available.
-When to Use 10 Years:
-The market or company has been relatively stable over the past decade.
-The aim is to understand long-term trends and cyclic patterns.
-Sufficient computational resources are available to handle the larger dataset.
-Practical Approach
-Experimentation: Start with 5 years of data. Train the model and evaluate its performance.
-Incremental Testing: Gradually include more historical data (e.g., moving to 6, 7, 8 years) and compare the performance. This can help in understanding if additional data improves model accuracy or introduces noise.
+- 5 Years: More reflective of current market conditions, lower risk of including outdated patterns, and reduced computational complexity.
+- 10 Years: Broader dataset providing more information, which could be beneficial for capturing long-term trends and reducing the risk of missing significant patterns.
+
+
+### **Our strategy**
+
+- **Start with 5 years of data:** Train the model and evaluate its performance.
+- **Incremental Testing:** Gradually include more historical data (e.g., moving to 6, 7, 8 years) and compare the performance. This can help in understanding if additional data improves model accuracy or introduces noise.
 Validation: Use cross-validation techniques to assess the model's performance over different periods. This helps in ensuring that the model generalizes well to different market conditions.
 By carefully considering these factors and adopting a flexible, experimental approach, you can determine the optimal historical data span for your specific stock price prediction model.
 
 
 
 
-
-
-## High Volatile Stocks
+## Why we want to choose 'High Volatile' Stocks
 
 - LSTM model excels at capturing patterns in complex data.
 - Therefore, LSTM can be better utilised for understanding high volatile instruments.
