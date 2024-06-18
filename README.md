@@ -24,10 +24,12 @@ Stock markets evolve over time. Technological advancements, regulatory changes, 
 
 ### 3. Model Complexity and Training Efficiency
 
-#### **Model Overfitting:** Using too much historical data can introduce noise and outdated patterns that are no longer relevant, leading to overfitting. 
+#### **Model Overfitting:** 
+Using too much historical data can introduce noise and outdated patterns that are no longer relevant, leading to overfitting. 
 Overfitting occurs when a model learns patterns that are specific to the training data but do not generalize well to unseen data.
 
-#### **Computational Load:** Larger datasets increase the computational requirements for training the model. 
+#### **Computational Load:** 
+Larger datasets increase the computational requirements for training the model. 
 Training on 10 years of data can be significantly more time-consuming and resource-intensive than training on 5 years of data, especially if the data frequency is daily.
 
 
