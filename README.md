@@ -13,6 +13,7 @@ LSTM is chosen due to its ability to capture long-term dependencies and patterns
 - Non-linearity: The relationship between past and future prices is non-linear and may include long-term dependencies, making traditional linear models less effective.
 - Noise: Financial time series data often contain a significant amount of noise, which can obscure patterns.
 
+
 ## **Considering Historical Data Span: 5 Years vs. 10 Years**
 
 ### 1. Relevance of Market Conditions
