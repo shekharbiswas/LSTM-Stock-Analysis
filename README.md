@@ -15,17 +15,28 @@ LSTM is chosen due to its ability to capture long-term dependencies and patterns
 
 ## **Considering Historical Data Span: 5 Years vs. 10 Years**
 
-1. Relevance of Market Conditions
-### **Market Evolution:** Stock markets evolve over time. Technological advancements, regulatory changes, and shifts in economic conditions can significantly alter market behavior. Data from the last 5 years is more likely to reflect the current market conditions compared to data from 10 years ago.
+### 1. Relevance of Market Conditions
+#### **Market Evolution:**
 
-Corporate Changes: Companies undergo substantial changes over a decade, including shifts in business models, management changes, mergers and acquisitions, which might render older data less relevant.
+Stock markets evolve over time. Technological advancements, regulatory changes, and shifts in economic conditions can significantly alter market behavior. Data from the last 5 years is more likely to reflect the current market conditions compared to data from 10 years ago.
 
-3. Model Complexity and Training Efficiency
-Model Overfitting: Using too much historical data can introduce noise and outdated patterns that are no longer relevant, leading to overfitting. Overfitting occurs when a model learns patterns that are specific to the training data but do not generalize well to unseen data.
-Computational Load: Larger datasets increase the computational requirements for training the model. Training on 10 years of data can be significantly more time-consuming and resource-intensive than training on 5 years of data, especially if the data frequency is daily.
-4. Availability and Quality of Data
-Data Quality: More recent data tends to be of higher quality with fewer missing values and more accurate records. Historical data beyond a certain point might be less reliable due to changes in reporting standards or data collection methods.
+#### **Corporate Changes:** Companies undergo substantial changes over a decade, including shifts in business models, management changes, mergers and acquisitions, which might render older data less relevant.
+
+### 3. Model Complexity and Training Efficiency
+
+#### **Model Overfitting:** Using too much historical data can introduce noise and outdated patterns that are no longer relevant, leading to overfitting. 
+Overfitting occurs when a model learns patterns that are specific to the training data but do not generalize well to unseen data.
+
+#### **Computational Load:** Larger datasets increase the computational requirements for training the model. 
+Training on 10 years of data can be significantly more time-consuming and resource-intensive than training on 5 years of data, especially if the data frequency is daily.
+
+
+### 4. Availability and Quality of Data
+
+#### **Data Quality:**
+More recent data tends to be of higher quality with fewer missing values and more accurate records. Historical data beyond a certain point might be less reliable due to changes in reporting standards or data collection methods.
 Technological Changes: Financial markets have seen significant technological changes in the past decade, including algorithmic trading and the rise of high-frequency trading. Models trained on more recent data are more likely to capture these modern dynamics.
+
 5. Economic Cycles and Trends
 Business Cycles: Financial markets are influenced by economic cycles (boom and bust periods). A 5-year span might capture one complete cycle, while a 10-year span could include multiple cycles, making it harder for the model to learn consistent patterns.
 Market Sentiment: Investor sentiment and market trends can change over shorter periods. A 5-year window might be more effective in capturing these short-to-medium term trends.
