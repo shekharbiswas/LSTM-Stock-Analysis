@@ -1,4 +1,7 @@
+# Problem statement
 
+Stock price prediction involves forecasting the future price of a company's stock using historical data. 
+Accurate predictions can inform trading strategies and investment decisions, aiming to maximize returns or minimize risk.
 
 
 
