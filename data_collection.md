@@ -22,7 +22,6 @@ Fundamental data includes financial statements and ratios that provide insights 
 - Return on Equity (ROE)
 - Debt-to-Equity Ratio
 
-
 ## 3. Economic Indicators
 
 Macroeconomic indicators can influence stock prices. Examples include:
