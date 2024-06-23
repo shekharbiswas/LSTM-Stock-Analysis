@@ -102,6 +102,16 @@ Using only historical **adjusted close prices** to predict stock prices in LSTM 
 - Lack of Context: Adjusted close prices alone do not provide information about trading volume, market sentiment, volatility, or any other market dynamics.
 - Missed Patterns: Important patterns such as trends, momentum, and cyclic behavior may not be fully captured by just looking at price history.
 
+### 2. Inadequate Volatility Measurement: 
+
+Adjusted close prices alone do not capture market volatility effectively. Indicators like Bollinger Bands or the Average True Range (ATR) provide better insights into market volatility.
+
+### 3. Noise Sensitivity: 
+
+Stock prices sre in general very noisy. Using only adjusted close prices may make it difficult for the model to differentiate between noise and meaningful patterns, leading to poor predictive performance. So additional parameters give enough context to separate noise from actual patterns.
+
+
+
 # Project Steps
 
 ## 2. Data Collection and Sources
