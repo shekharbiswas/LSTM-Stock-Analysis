@@ -2,7 +2,7 @@
 
 Stock price prediction involves forecasting the future price of a company's stock using historical data. 
 Accurate predictions can inform trading strategies and investment decisions, aiming to maximize returns or minimize risk.
-The objective is to develop a Long Short-Term Memory (LSTM) neural network model to predict future stock prices based on historical data. 
+The objective is to develop a Long Short-Term Memory (LSTM) neural network model to predict future stock prices based on historical data and by doing so, find the best combination of hyperparameters. 
 
 LSTM is chosen due to its ability to capture long-term dependencies and patterns in sequential data.
 
