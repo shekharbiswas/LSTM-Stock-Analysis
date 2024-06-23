@@ -6,6 +6,11 @@ The objective is to develop a Long Short-Term Memory (LSTM) neural network model
 
 LSTM is chosen due to its ability to capture long-term dependencies and patterns in sequential data.
 
+Hyperparameter tuning is quite important step in the development of LSTM (Long Short-Term Memory) models, especially for time-series prediction (e.g., stock price forecasting).
+It involves the optimization of various model parameters to achieve the best possible performance.
+
+**Optimizing the model's performance through effective hyperparameter tuning** would be the most demanding task.
+
 ## **Challenges**
 
 - Volatility: Stock prices are highly volatile and influenced by numerous unpredictable factors such as economic events, market sentiment, and geopolitical issues.
