@@ -149,22 +149,6 @@ Technical indicators inherently incorporate lagged effects of price movements. L
 - Indicators: SMA (Simple Moving Average), EMA (Exponential Moving Average), RSI (Relative Strength Index), MACD (Moving Average Convergence Divergence), - OBV (On-Balance Volume), ATR (Average True Range), Bollinger Bands, ADX (Average Directional Index), CCI (Commodity Channel Index), Williams %R, etc.
 - Calculation: Implemented using the ta library or similar Python libraries.
 
-### News Data:
-
-- Source: News APIs (e.g., News API, RSS feeds from financial news websites).
-- Features: Title, Description, Publication Date, Content, Author, URL, Image URL.
-- Time Period: Continuous collection of recent news articles.
-
-## 3. Sentiment Analysis Pipeline
-
-#### Text Processing:
-- Preprocessing: Tokenization, stop-word removal, punctuation removal, stemming or lemmatization.
-- Feature Extraction: TF-IDF (Term Frequency-Inverse Document Frequency) vectorization or word embeddings (e.g., Word2Vec, GloVe).
-
-#### Sentiment Analysis:
-- Model: Pre-trained sentiment analysis models (e.g., VADER, TextBlob) or custom-trained models using labeled sentiment datasets.
-- Output: Sentiment scores (positive, negative, neutral) for each news article.
-
 ## 4. Integration with LSTM Model
 ### Data Integration:
 
@@ -199,3 +183,6 @@ Performance: Compare LSTM model performance with and without sentiment features 
 ### Notes
 - https://www.atlantis-press.com/article/125986767.pdf
 - RNN + LSTM Video : https://www.youtube.com/watch?v=6niqTuYFZLQ
+
+## Conclusion
+To be done ( news, public sentiment etc. could bring more information to LSTM and can do a more accurate job)
