@@ -91,6 +91,17 @@ By carefully considering these factors and adopting a flexible, experimental app
 - 4 stocks from different segment ( need to research a bit )
 - Tech, Finance, Industrial Prod, FMCG
 
+
+
+## Why Historical data has limitations
+
+Using only historical **adjusted close prices** to predict stock prices in LSTM models has several limitations & problems:
+
+### 1. Limited Information
+
+- Lack of Context: Adjusted close prices alone do not provide information about trading volume, market sentiment, volatility, or any other market dynamics.
+- Missed Patterns: Important patterns such as trends, momentum, and cyclic behavior may not be fully captured by just looking at price history.
+
 # Project Steps
 
 ## 2. Data Collection and Sources
