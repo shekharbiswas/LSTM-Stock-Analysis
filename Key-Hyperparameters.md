@@ -17,63 +17,79 @@
 
 - The fraction of input units to drop during training.
 - Helps to prevent overfitting by making the model more robust.
-- Common values: 0.2, 0.3, 0.4, 0.5.
+- Common values: between 0.2 and 0.7.
 
 ## Learning Rate:
 
 The step size used by the optimizer to update the weights.
 Affects the speed and quality of the learning process.
 Common values: 0.001, 0.01, 0.1.
-Batch Size:
 
-The number of training examples used in one iteration of model training.
-Larger batches can improve gradient estimates but require more memory.
-Common values: 32, 64, 128.
-Number of Epochs:
+## Batch Size:
 
-The number of complete passes through the training dataset.
-More epochs allow the model to learn longer but risk overfitting.
-Common values: 10, 20, 30.
-Optimizer:
+- The number of training examples used in one iteration of model training.
+- Larger batches can improve gradient estimates but require more memory.
+- Common values: 32, 64, 128, 256.
 
-The algorithm used to minimize the loss function.
-Common choices include Adam, RMSprop, and SGD.
-Hyperparameter Tuning Techniques
-Grid Search:
+## Number of Epochs:
 
-Exhaustively searches through a predefined set of hyperparameters.
-Suitable for smaller search spaces.
-Time-consuming but simple to implement.
-Random Search:
+- The number of complete passes through the training dataset.
+- More epochs allow the model to learn longer but risk overfitting.
+- Common values: between 20 and 50.
 
-Samples hyperparameters randomly from a defined range.
-Often more efficient than grid search as it explores more diverse values.
-Can find good configurations faster.
-Bayesian Optimization:
+## Optimizer:
 
-Uses probabilistic models to identify promising hyperparameters.
-Efficient for complex and high-dimensional search spaces.
-Balances exploration and exploitation to find optimal values.
-Process of Hyperparameter Tuning
-Data Preparation:
+- The algorithm used to minimize the loss function.
+- Common choices include Adam, RMSprop, and SGD.
 
-Normalize and preprocess the historical stock price data.
-Create sequences suitable for LSTM input.
-Model Definition:
+# Hyperparameter Tuning Techniques
 
-Define the LSTM model architecture with tunable hyperparameters.
-Cross-Validation:
+## Grid Search:
 
-Split the data into training and validation sets to evaluate model performance.
-Use cross-validation to ensure the model generalizes well to unseen data.
-Search for Optimal Hyperparameters:
+- Exhaustively searches through a predefined set of hyperparameters.
+- Suitable for smaller search spaces.
+- Time-consuming but simple to implement.
 
-Apply grid search, random search, or Bayesian optimization to find the best hyperparameters.
-Train multiple models with different hyperparameter combinations.
-Model Evaluation:
 
-Assess the performance of each model using metrics like Mean Squared Error (MSE) or Mean Absolute Error (MAE).
-Select the model with the best validation performance.
-Testing:
+## Random Search:
+
+- Samples hyperparameters randomly from a defined range.
+- Often more efficient than grid search as it explores more diverse values.
+- Can find good configurations faster.
+
+
+## Bayesian Optimization:
+
+- Uses probabilistic models to identify promising hyperparameters.
+- Efficient for complex and high-dimensional search spaces.
+- Balances exploration and exploitation to find optimal values.
+
+# Process of Hyperparameter Tuning
+
+## Data Preparation:
+
+- Normalize and preprocess the historical stock price data.
+- Create sequences suitable for LSTM input.
+
+## Model Definition:
+
+- Define the LSTM model architecture with tunable hyperparameters.
+
+## Cross-Validation:
+
+- Split the data into training and validation sets to evaluate model performance.
+- Use cross-validation to ensure the model generalizes well to unseen data.
+
+## Search for Optimal Hyperparameters:
+
+- Apply grid search, random search, or Bayesian optimization to find the best hyperparameters.
+- Train multiple models with different hyperparameter combinations.
+
+## Model Evaluation:
+
+- Assess the performance of each model using metrics like Mean Squared Error (MSE) or Mean Absolute Error (MAE).
+- Select the model with the best validation performance.
+
+## Testing:
 
 Evaluate the best model on a separate test set to ensure it performs well on unseen data.
