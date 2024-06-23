@@ -110,6 +110,33 @@ Adjusted close prices alone do not capture market volatility effectively. Indica
 
 Stock prices sre in general very noisy. Using only adjusted close prices may make it difficult for the model to differentiate between noise and meaningful patterns, leading to poor predictive performance. So additional parameters give enough context to separate noise from actual patterns.
 
+## Benefits of Addl. Technical indicators
+
+
+Using technical indicators in Long Short-Term Memory (LSTM) models for predicting stock prices can enhance the predictive power and improve the model's performance.
+
+- 1. Additional Information
+Technical indicators provide additional information about the market that can be useful for prediction. They summarize various aspects of price movements, trading volume, and market trends, offering insights beyond raw price data.
+
+
+- 2. Feature Engineering
+Incorporating technical indicators is a form of feature engineering, which can significantly enhance the predictive capabilities of machine learning models. Well-chosen indicators can highlight important aspects of the data, providing the LSTM with richer input features.
+
+- 3. Capture Market Sentiment
+Many technical indicators are designed to capture market sentiment and momentum, which are critical for making short-term predictions. Indicators like the Relative Strength Index (RSI) and Moving Average Convergence Divergence (MACD) can signal overbought or oversold conditions, helping the model anticipate potential price reversals.
+
+- 4. Trend Detection
+Technical indicators can help detect trends and patterns in stock prices that might not be immediately apparent from raw price data. Moving averages, for instance, smooth out price data to highlight trends over different time horizons.
+
+- 5. Reducing Noise
+Stock prices can be very noisy and subject to random fluctuations. Technical indicators often smooth out these fluctuations and highlight more meaningful patterns. This can make the data more suitable for LSTM models, which can struggle with extremely noisy data.
+
+- 6. Improving Model Generalization
+Using a variety of indicators can help the model generalize better to unseen data. Different indicators can capture different aspects of the market behavior, providing a more holistic view and preventing overfitting to specific patterns in the training data.
+
+- 7. Lagged Effects
+Technical indicators inherently incorporate lagged effects of price movements. LSTMs are designed to handle sequential data and dependencies over time, making them well-suited to learn from these lagged relationships provided by the indicators.
+
 
 
 # Project Steps
