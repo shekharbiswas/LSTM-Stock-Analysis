@@ -9,9 +9,9 @@ LSTM is chosen due to its ability to capture long-term dependencies and patterns
 Hyperparameter tuning is quite important step in the development of LSTM (Long Short-Term Memory) models, especially for time-series prediction (e.g., stock price forecasting).
 It involves the optimization of various model parameters to achieve the best possible performance and hence the best hyperparameters.
 
-**We will be using 3 Hyperparameter tuning techniques for same LSTM model and compare them to choose the best.**
+**We will be using 3 Hyperparameter tuning techniques for the LSTM model and compare them to choose the best technique.**
 
-**Optimizing the model's performance through effective hyperparameter tuning** would be the most demanding task.
+Knowing the most effective hyperparameters by applying multiple tuning techniques would be the most demanding task.
 
 ## **Challenges**
 
@@ -74,8 +74,6 @@ The choice between using 5 years or 10 years of historical data involves a trade
 - **Incremental Testing:** Gradually include more historical data (e.g., moving to 6, 7, 8 years) and compare the performance. This can help in understanding if additional data improves model accuracy or introduces noise.
 Validation: Use cross-validation techniques to assess the model's performance over different periods. This helps in ensuring that the model generalizes well to different market conditions.
 By carefully considering these factors and adopting a flexible, experimental approach, you can determine the optimal historical data span for your specific stock price prediction model.
-
-
 
 
 ## Why do we want to choose 'High Volatile' Stocks
