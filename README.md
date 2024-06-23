@@ -89,6 +89,64 @@ By carefully considering these factors and adopting a flexible, experimental app
 - 4 stocks from different segment ( need to research a bit )
 - Tech, Finance, Industrial Prod, FMCG
 
+# Project Steps
+
+## 2. Data Collection and Sources
+### Historical Stock Data:
+- Source: Yahoo Finance or similar financial data APIs.
+- Features: Open, High, Low, Close prices, Volume, Adjusted Close.
+- Time Period: From January 1, 2015, to March 31, 2023 (example period).
+
+### Technical Indicators:
+- Indicators: SMA (Simple Moving Average), EMA (Exponential Moving Average), RSI (Relative Strength Index), MACD (Moving Average Convergence Divergence), - OBV (On-Balance Volume), ATR (Average True Range), Bollinger Bands, ADX (Average Directional Index), CCI (Commodity Channel Index), Williams %R, etc.
+- Calculation: Implemented using the ta library or similar Python libraries.
+
+### News Data:
+
+- Source: News APIs (e.g., News API, RSS feeds from financial news websites).
+- Features: Title, Description, Publication Date, Content, Author, URL, Image URL.
+- Time Period: Continuous collection of recent news articles.
+
+## 3. Sentiment Analysis Pipeline
+
+#### Text Processing:
+- Preprocessing: Tokenization, stop-word removal, punctuation removal, stemming or lemmatization.
+- Feature Extraction: TF-IDF (Term Frequency-Inverse Document Frequency) vectorization or word embeddings (e.g., Word2Vec, GloVe).
+
+#### Sentiment Analysis:
+- Model: Pre-trained sentiment analysis models (e.g., VADER, TextBlob) or custom-trained models using labeled sentiment datasets.
+- Output: Sentiment scores (positive, negative, neutral) for each news article.
+
+## 4. Integration with LSTM Model
+### Data Integration:
+
+- Feature Engineering: Concatenate historical stock data (prices, indicators) with sentiment scores from news articles.
+- Time Alignment: Align news sentiment scores with corresponding historical data timestamps.
+- LSTM Model Architecture:
+- Input Layer: Sequential input of historical data (including technical indicators) and sentiment scores.
+- Hidden Layers: Multiple LSTM layers to capture temporal dependencies and patterns.
+- Output Layer: Single neuron output for predicting future stock prices.
+- Training and Validation:
+- Training Data: Split historical data into training and validation sets.
+- Model Training: Train LSTM model on historical data with sentiment features.
+- Validation: Validate model performance using validation data to ensure robustness.
+
+## 5. Evaluation Metrics and Performance Measures
+Metrics: Mean Squared Error (MSE), Mean Absolute Error (MAE), R-squared (R²) for regression evaluation.
+Performance: Compare LSTM model performance with and without sentiment features to assess the impact of news sentiment on prediction accuracy.
+
+## 6. Implementation and Tools
+- Programming Language: Python.
+- Libraries: Pandas, NumPy, TensorFlow/Keras for LSTM, NLTK or SpaCy for text processing, ta for technical indicators.
+- Environment: Jupyter Notebook or similar for data exploration, model training, and evaluation.
+
+## 7. Timeline and Milestones
+- Week 1-2: Data collection (historical stock data, news articles).
+- Week 3: Preprocessing and integration (technical indicators, sentiment analysis).
+- Week 4: LSTM model development and training. Hyperparameter Tuning.
+- Week 5: Evaluation, fine-tuning, and performance comparison. Report.
+
+
 
 ### Notes
 - https://www.atlantis-press.com/article/125986767.pdf
