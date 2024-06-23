@@ -78,7 +78,7 @@ By carefully considering these factors and adopting a flexible, experimental app
 
 
 
-## Why we want to choose 'High Volatile' Stocks
+## Why do we want to choose 'High Volatile' Stocks
 
 - LSTM model excels at capturing patterns in complex data.
 - Therefore, LSTM can be better utilised for understanding high volatile instruments.
@@ -93,7 +93,7 @@ By carefully considering these factors and adopting a flexible, experimental app
 
 
 
-## Why Historical data has limitations
+## Why does using only Historical Adj Close price have limitations
 
 Using only historical **adjusted close prices** to predict stock prices in LSTM models has several limitations & problems:
 
