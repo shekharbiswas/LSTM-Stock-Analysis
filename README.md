@@ -2,14 +2,16 @@
 
 Stock price prediction involves forecasting the future price of a company's stock using historical data. 
 Accurate predictions can inform trading strategies and investment decisions, aiming to maximize returns or minimize risk.
-The objective is to develop a Long Short-Term Memory (LSTM) neural network model to predict future stock prices based on historical data. 
+The objective is to develop a Long Short-Term Memory (LSTM) neural network model to predict future stock prices based on historical data and by doing so, **find the best combination of hyperparameters**. 
 
 LSTM is chosen due to its ability to capture long-term dependencies and patterns in sequential data.
 
 Hyperparameter tuning is quite important step in the development of LSTM (Long Short-Term Memory) models, especially for time-series prediction (e.g., stock price forecasting).
-It involves the optimization of various model parameters to achieve the best possible performance.
+It involves the optimization of various model parameters to achieve the best possible performance and hence the best hyperparameters.
 
-**Optimizing the model's performance through effective hyperparameter tuning** would be the most demanding task.
+**We will be using 3 Hyperparameter tuning techniques for the LSTM model and compare them to choose the best technique.**
+
+Knowing the most effective hyperparameters by applying multiple tuning techniques would be the most demanding task.
 
 ## **Challenges**
 
@@ -74,9 +76,7 @@ Validation: Use cross-validation techniques to assess the model's performance ov
 By carefully considering these factors and adopting a flexible, experimental approach, you can determine the optimal historical data span for your specific stock price prediction model.
 
 
-
-
-## Why we want to choose 'High Volatile' Stocks
+## Why do we want to choose 'High Volatile' Stocks
 
 - LSTM model excels at capturing patterns in complex data.
 - Therefore, LSTM can be better utilised for understanding high volatile instruments.
@@ -89,6 +89,54 @@ By carefully considering these factors and adopting a flexible, experimental app
 - 4 stocks from different segment ( need to research a bit )
 - Tech, Finance, Industrial Prod, FMCG
 
+
+
+## Why does using only Historical Adj Close price have limitations
+
+Using only historical **adjusted close prices** to predict stock prices in LSTM models has several limitations & problems:
+
+### 1. Limited Information
+
+- Lack of Context: Adjusted close prices alone do not provide information about trading volume, market sentiment, volatility, or any other market dynamics.
+- Missed Patterns: Important patterns such as trends, momentum, and cyclic behavior may not be fully captured by just looking at price history.
+
+### 2. Inadequate Volatility Measurement: 
+
+Adjusted close prices alone do not capture market volatility effectively. Indicators like Bollinger Bands or the Average True Range (ATR) provide better insights into market volatility.
+
+### 3. Noise Sensitivity: 
+
+Stock prices sre in general very noisy. Using only adjusted close prices may make it difficult for the model to differentiate between noise and meaningful patterns, leading to poor predictive performance. So additional parameters give enough context to separate noise from actual patterns.
+
+## Benefits of Addl. Technical indicators
+
+
+Using technical indicators in Long Short-Term Memory (LSTM) models for predicting stock prices can enhance the predictive power and improve the model's performance.
+
+- 1. Additional Information
+Technical indicators provide additional information about the market that can be useful for prediction. They summarize various aspects of price movements, trading volume, and market trends, offering insights beyond raw price data.
+
+
+- 2. Feature Engineering
+Incorporating technical indicators is a form of feature engineering, which can significantly enhance the predictive capabilities of machine learning models. Well-chosen indicators can highlight important aspects of the data, providing the LSTM with richer input features.
+
+- 3. Capture Market Sentiment
+Many technical indicators are designed to capture market sentiment and momentum, which are critical for making short-term predictions. Indicators like the Relative Strength Index (RSI) and Moving Average Convergence Divergence (MACD) can signal overbought or oversold conditions, helping the model anticipate potential price reversals.
+
+- 4. Trend Detection
+Technical indicators can help detect trends and patterns in stock prices that might not be immediately apparent from raw price data. Moving averages, for instance, smooth out price data to highlight trends over different time horizons.
+
+- 5. Reducing Noise
+Stock prices can be very noisy and subject to random fluctuations. Technical indicators often smooth out these fluctuations and highlight more meaningful patterns. This can make the data more suitable for LSTM models, which can struggle with extremely noisy data.
+
+- 6. Improving Model Generalization
+Using a variety of indicators can help the model generalize better to unseen data. Different indicators can capture different aspects of the market behavior, providing a more holistic view and preventing overfitting to specific patterns in the training data.
+
+- 7. Lagged Effects
+Technical indicators inherently incorporate lagged effects of price movements. LSTMs are designed to handle sequential data and dependencies over time, making them well-suited to learn from these lagged relationships provided by the indicators.
+
+
+
 # Project Steps
 
 ## 2. Data Collection and Sources
@@ -100,22 +148,6 @@ By carefully considering these factors and adopting a flexible, experimental app
 ### Technical Indicators:
 - Indicators: SMA (Simple Moving Average), EMA (Exponential Moving Average), RSI (Relative Strength Index), MACD (Moving Average Convergence Divergence), - OBV (On-Balance Volume), ATR (Average True Range), Bollinger Bands, ADX (Average Directional Index), CCI (Commodity Channel Index), Williams %R, etc.
 - Calculation: Implemented using the ta library or similar Python libraries.
-
-### News Data:
-
-- Source: News APIs (e.g., News API, RSS feeds from financial news websites).
-- Features: Title, Description, Publication Date, Content, Author, URL, Image URL.
-- Time Period: Continuous collection of recent news articles.
-
-## 3. Sentiment Analysis Pipeline
-
-#### Text Processing:
-- Preprocessing: Tokenization, stop-word removal, punctuation removal, stemming or lemmatization.
-- Feature Extraction: TF-IDF (Term Frequency-Inverse Document Frequency) vectorization or word embeddings (e.g., Word2Vec, GloVe).
-
-#### Sentiment Analysis:
-- Model: Pre-trained sentiment analysis models (e.g., VADER, TextBlob) or custom-trained models using labeled sentiment datasets.
-- Output: Sentiment scores (positive, negative, neutral) for each news article.
 
 ## 4. Integration with LSTM Model
 ### Data Integration:
@@ -151,3 +183,6 @@ Performance: Compare LSTM model performance with and without sentiment features 
 ### Notes
 - https://www.atlantis-press.com/article/125986767.pdf
 - RNN + LSTM Video : https://www.youtube.com/watch?v=6niqTuYFZLQ
+
+## Conclusion
+To be done ( news, public sentiment etc. could bring more information to LSTM and can do a more accurate job)
