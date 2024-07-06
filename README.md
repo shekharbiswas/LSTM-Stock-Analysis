@@ -135,7 +135,7 @@ Using a variety of indicators can help the model generalize better to unseen dat
 - 7. Lagged Effects
 Technical indicators inherently incorporate lagged effects of price movements. LSTMs are designed to handle sequential data and dependencies over time, making them well-suited to learn from these lagged relationships provided by the indicators.
 
-
+However, for this project we will focus mainly on Adj Close Price.
 
 # Project Steps
 
