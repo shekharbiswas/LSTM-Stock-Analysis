@@ -7,7 +7,7 @@ The objective is to develop a Long Short-Term Memory (LSTM) neural network model
 LSTM is chosen due to its ability to capture long-term dependencies and patterns in sequential data.
 
 Hyperparameter tuning is quite important step in the development of LSTM (Long Short-Term Memory) models, especially for time-series prediction (e.g., stock price forecasting).
-It involves the optimization of various model parameters to achieve the best possible performance and hence the best hyperparameters.
+It involves the optimization of various model Hyper-parameters to achieve the best possible performance and hence the best hyperparameters.
 
 **We will be using 3 Hyperparameter tuning techniques for the LSTM model and compare them to choose the best technique.**
 
