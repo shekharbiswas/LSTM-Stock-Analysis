@@ -66,10 +66,11 @@ The choice between using 5 years or 10 years of historical data involves a trade
 - 5 Years: More reflective of current market conditions, lower risk of including outdated patterns, and reduced computational complexity.
 - 10 Years: Broader dataset providing more information, which could be beneficial for capturing long-term trends and reducing the risk of missing significant patterns.
 
+However, 10 years is a good starting point and then we can decide which time range has more impact.
 
 ## **Our strategy**
 
-- **Start with 5 years of data:** Train the model and evaluate its performance.
+- **Start with 10 years of data:** Train the model and evaluate its performance.
   
 - **Incremental Testing:** Gradually include more historical data (e.g., moving to 6, 7, 8 years) and compare the performance. This can help in understanding if additional data improves model accuracy or introduces noise.
 Validation: Use cross-validation techniques to assess the model's performance over different periods. This helps in ensuring that the model generalizes well to different market conditions.
