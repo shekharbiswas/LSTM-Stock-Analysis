@@ -185,5 +185,8 @@ Performance: Compare LSTM model performance with and without sentiment features 
 - https://www.atlantis-press.com/article/125986767.pdf
 - RNN + LSTM Video : https://www.youtube.com/watch?v=6niqTuYFZLQ
 
+[![Watch the video](https://img.youtube.com/vi/6niqTuYFZLQ/maxresdefault.jpg)](https://www.youtube.com/watch?v=6niqTuYFZLQ&list=PLnMKNibPkDnF6-h0x06AATx1kAuBiPRTE)
+
+
 ## Conclusion
 To be done ( news, public sentiment etc. could bring more information to LSTM and can do a more accurate job)
