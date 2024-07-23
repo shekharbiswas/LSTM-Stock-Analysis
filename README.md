@@ -183,7 +183,7 @@ Performance: Compare LSTM model performance with and without sentiment features 
 
 ### Notes
 - https://www.atlantis-press.com/article/125986767.pdf
-- RNN + LSTM Video : https://www.youtube.com/watch?v=6niqTuYFZLQ
+- RNN + LSTM Video:
 
 [![Watch the video](https://img.youtube.com/vi/6niqTuYFZLQ/maxresdefault.jpg)](https://www.youtube.com/watch?v=6niqTuYFZLQ&list=PLnMKNibPkDnF6-h0x06AATx1kAuBiPRTE)
 
