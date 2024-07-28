@@ -20,7 +20,7 @@ Knowing the most effective hyperparameters by applying multiple tuning technique
 - Non-linearity: The relationship between past and future prices is non-linear and may include long-term dependencies, making traditional linear models less effective.
 - Noise: Financial time series data often contain a significant amount of noise, which can obscure patterns.
 
-- Computational challenges: 
+- Computational challenges: Hyperparameter tuning is computationally super expensive. Therefore, upto 300GB of RAM and high speed multi-core GPUs are must.
 
 ## **Considering Historical Data Span: 5 Years vs. 10 Years**
 
