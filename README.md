@@ -178,7 +178,7 @@ Performance: Compare LSTM model performance with and without sentiment features 
 - Week 1-2: Data collection (historical stock data, news articles).
 - Week 3: Preprocessing and integration (technical indicators, sentiment analysis).
 - Week 4: LSTM model development and training. Hyperparameter Tuning.
-- Week 5: Evaluation, fine-tuning, and performance comparison. Report.
+- Week 5-6: Evaluation, fine-tuning, and checking trials (json files)
 
 
 
