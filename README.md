@@ -181,8 +181,13 @@ Performance: Compare LSTM model performance with and without sentiment features 
 - Week 5-6: Evaluation, fine-tuning, and checking trials (json files)
 
 
+## Observation
 
-### References
+### Hyperband took More Trials
+- Hyperband starts with a large number of trials to ensure it explores the hyperparameter space thoroughly.
+- Hyperband dynamically allocates resources based on intermediate results. Therefore, some configurations had multiple chances with varying resource allocation (more trials).
+
+## References
 - https://www.atlantis-press.com/article/125986767.pdf
 - RNN + LSTM Video:
 
