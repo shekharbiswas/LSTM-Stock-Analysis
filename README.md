@@ -71,7 +71,7 @@ However, 10 years is a good starting point and then we can decide which time ran
 
 ## **Our strategy**
 
-- **Start with 10 years of data:** Train the model and evaluate its performance.
+- **Start with 30 years of data:** Train the model and evaluate its performance.
   
 - **Incremental Testing:** Gradually include more historical data (e.g., moving to 6, 7, 8 years) and compare the performance. This can help in understanding if additional data improves model accuracy or introduces noise.
 Validation: Use cross-validation techniques to assess the model's performance over different periods. This helps in ensuring that the model generalizes well to different market conditions.
