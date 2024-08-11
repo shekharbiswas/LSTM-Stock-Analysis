@@ -19,3 +19,4 @@ Steps :
 - Early Stopping (Optional): Implement early stopping if the validation loss stops decreasing.
 
 
+Question : Should we use callbacks=[early_stopping]
