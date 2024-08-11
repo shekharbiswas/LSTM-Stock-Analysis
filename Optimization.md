@@ -14,3 +14,5 @@ Steps :
 - Split the Training Data: Split the training data into training and validation sets.
 - Track Training and Validation Losses: Use these sets to track the training and validation losses during the model fitting.
 - Early Stopping (Optional): Implement early stopping if the validation loss stops decreasing.
+
+![image](https://github.com/user-attachments/assets/97d40e75-4a51-488d-822d-7e4855c8964a)
