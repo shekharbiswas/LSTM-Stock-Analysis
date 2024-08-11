@@ -19,4 +19,6 @@ Steps :
 - Early Stopping (Optional): Implement early stopping if the validation loss stops decreasing.
 
 
-Question : Should we use callbacks=[early_stopping]
+Question : Should we use callbacks=[early_stopping]?
+
+The model monitors the validation loss during training. If the validation loss does not improve for a certain number of epochs (specified by the patience parameter), the training process will be stopped early, and the model will revert to the best weights observed during the training.
