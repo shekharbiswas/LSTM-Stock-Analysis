@@ -1,6 +1,8 @@
 # **Problem statement**
 
-Stock price prediction involves forecasting the future price of a company's stock using historical data. 
+Stock price prediction is a critical area of study in financial markets and it aims to forecast future stock prices by the help of historical data and various analytical methods. Accurate predictions can build trading strategies and investment decisions, of course, it can maximise returns by keeping minimum risk.
+
+The project involves forecasting the future price of a company's stock using historical data. 
 Accurate predictions can inform trading strategies and investment decisions, aiming to maximize returns or minimize risk.
 The objective is to develop a Long Short-Term Memory (LSTM) neural network model to predict future stock prices based on historical data and by doing so, **find the best combination of hyperparameters**. 
 
