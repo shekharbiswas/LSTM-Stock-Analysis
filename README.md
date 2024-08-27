@@ -197,3 +197,6 @@ Performance: Compare LSTM model performance with and without sentiment features 
 
 ## Conclusion
 To be done ( news, public sentiment etc. could bring more information to LSTM and can do a more accurate job)
+
+
+[Report_in_progress](https://docs.google.com/document/d/1Q6EIW7ruhXGIC6TRAbmZ9arj9SQXEPh3XpvqWquUhT8/edit)
