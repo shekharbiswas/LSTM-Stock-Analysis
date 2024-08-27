@@ -1,6 +1,8 @@
 # **Problem statement**
 
-Stock price prediction involves forecasting the future price of a company's stock using historical data. 
+Stock price prediction is a critical area of study in financial markets and it aims to forecast future stock prices by the help of historical data and various analytical methods. Accurate predictions can build trading strategies and investment decisions, of course, it can maximise returns by keeping minimum risk.
+
+The project involves forecasting the future price of a company's stock using historical data. 
 Accurate predictions can inform trading strategies and investment decisions, aiming to maximize returns or minimize risk.
 The objective is to develop a Long Short-Term Memory (LSTM) neural network model to predict future stock prices based on historical data and by doing so, **find the best combination of hyperparameters**. 
 
@@ -20,6 +22,7 @@ Knowing the most effective hyperparameters by applying multiple tuning technique
 - Non-linearity: The relationship between past and future prices is non-linear and may include long-term dependencies, making traditional linear models less effective.
 - Noise: Financial time series data often contain a significant amount of noise, which can obscure patterns.
 
+- Computational challenges: Hyperparameter tuning is computationally super expensive. Therefore, upto 300GB of RAM and high speed multi-core GPUs are must.
 
 ## **Considering Historical Data Span: 5 Years vs. 10 Years**
 
@@ -61,16 +64,16 @@ Investor sentiment and market trends can change over shorter periods. A 5-year w
 
 #### **Balancing Act:**
 
-The choice between using 5 years or 10 years of historical data involves a trade-off:
+The choice between using 30 years or 10 years of historical data involves a trade-off:
 
-- 5 Years: More reflective of current market conditions, lower risk of including outdated patterns, and reduced computational complexity.
-- 10 Years: Broader dataset providing more information, which could be beneficial for capturing long-term trends and reducing the risk of missing significant patterns.
+- 10 Years: More reflective of current market conditions, lower risk of including outdated patterns, and reduced computational complexity.
+- 30 Years: Broader dataset providing more information, which could be beneficial for capturing long-term trends and reducing the risk of missing significant patterns.
 
 However, 10 years is a good starting point and then we can decide which time range has more impact.
 
 ## **Our strategy**
 
-- **Start with 10 years of data:** Train the model and evaluate its performance.
+- **Start with 30 years of data:** Train the model and evaluate its performance.
   
 - **Incremental Testing:** Gradually include more historical data (e.g., moving to 6, 7, 8 years) and compare the performance. This can help in understanding if additional data improves model accuracy or introduces noise.
 Validation: Use cross-validation techniques to assess the model's performance over different periods. This helps in ensuring that the model generalizes well to different market conditions.
@@ -177,13 +180,24 @@ Performance: Compare LSTM model performance with and without sentiment features 
 - Week 1-2: Data collection (historical stock data, news articles).
 - Week 3: Preprocessing and integration (technical indicators, sentiment analysis).
 - Week 4: LSTM model development and training. Hyperparameter Tuning.
-- Week 5: Evaluation, fine-tuning, and performance comparison. Report.
+- Week 5-6: Evaluation, fine-tuning, and checking trials (json files)
 
 
+## Observation
 
-### Notes
+### Hyperband took More Trials
+- Hyperband starts with a large number of trials to ensure it explores the hyperparameter space thoroughly.
+- Hyperband dynamically allocates resources based on intermediate results. Therefore, some configurations had multiple chances with varying resource allocation (more trials).
+
+## References
 - https://www.atlantis-press.com/article/125986767.pdf
-- RNN + LSTM Video : https://www.youtube.com/watch?v=6niqTuYFZLQ
+- [RNN + LSTM Video](https://www.youtube.com/watch?v=6niqTuYFZLQ&list=PLnMKNibPkDnF6-h0x06AATx1kAuBiPRTE)
+
+
 
 ## Conclusion
 To be done ( news, public sentiment etc. could bring more information to LSTM and can do a more accurate job)
+
+#### Report 
+
+[Report_in_progress](https://docs.google.com/document/d/1Q6EIW7ruhXGIC6TRAbmZ9arj9SQXEPh3XpvqWquUhT8/edit)
