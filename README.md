@@ -200,4 +200,4 @@ To be done ( news, public sentiment etc. could bring more information to LSTM an
 
 #### Report 
 
-[Report_in_progress](https://docs.google.com/document/d/1Q6EIW7ruhXGIC6TRAbmZ9arj9SQXEPh3XpvqWquUhT8/edit)
+[Report_in_progress](https://docs.google.com/document/d/1SLpvkRHRUMCsP8T4kJP9dOtYc1hDUW0OPjMdxWQluA4/edit)
