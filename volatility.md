@@ -9,7 +9,7 @@ What it does: Measures the long-term memory of time series data. Values range fr
 - 0.5 suggests a random walk (unpredictable)
 - 0.5 indicates a trending series (predictable)
 - < 0.5 suggests mean-reverting behavior (also potentially predictable)
-- 
+  
 Why it matters: A higher Hurst exponent indicates a persistent trend, which could mean that the stock's volatility might be more predictable.
 
 ### Volatility Clustering
