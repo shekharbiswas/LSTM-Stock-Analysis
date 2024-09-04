@@ -30,8 +30,11 @@ What it does: Analyzes the sensitivity of a stock’s price to external shocks (
 Why it matters: If a stock is highly sensitive to such events, its volatility may be less predictable with historical data alone.
 Practical Approach
 
-### Historical Backtesting: Test different models on historical data to see how well they predict volatility. Stocks that consistently perform well under historical models may be more predictable.
+### Historical Backtesting
 
-### Multifactor Models: Use multifactor models that incorporate both historical data and forward-looking indicators to improve predictability.
+Test different models on historical data to see how well they predict volatility. Stocks that consistently perform well under historical models may be more predictable.
+
+### Multifactor Models
+Use multifactor models that incorporate both historical data and forward-looking indicators to improve predictability.
 
 In essence, while no single indicator can guarantee predictability, combining these approaches can help you gauge which stocks are more likely to have predictable volatility based on historical data and which are more susceptible to unexpected shifts.
