@@ -36,5 +36,5 @@ Test different models on historical data to see how well they predict volatility
 
 ### Multifactor Models
 Use multifactor models that incorporate both historical data and forward-looking indicators to improve predictability.
-
-In essence, while no single indicator can guarantee predictability, combining these approaches can help you gauge which stocks are more likely to have predictable volatility based on historical data and which are more susceptible to unexpected shifts.
+In essence, while no single indicator can guarantee predictability, combining these approaches can help you gauge which 
+stocks are more likely to have predictable volatility based on historical data and which are more susceptible to unexpected shifts.
